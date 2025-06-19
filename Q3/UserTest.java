@@ -3,11 +3,11 @@ import static org.junit.jupiter.api.Assertions.*;
 public class UserTest {
     @Test
     public void testUserFields() {
-        User user = new User("Shreyash", "shreyash@example.com", 22);
+        User user = new User("Shreyash", "shreyash@gmail.com", 22);
 
         assertAll("User properties",
             () -> assertEquals("Shreyash", user.getName()),
-            () -> assertEquals("shreyash@example.com", user.getEmail()),
+            () -> assertEquals("shreyash@gmail.com", user.getEmail()),
             () -> assertEquals(22, user.getAge()),
             () -> assertNotNull(user.getEmail()),
             () -> assertTrue(user.getAge() > 18)
